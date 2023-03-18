@@ -7,11 +7,11 @@ export const goTOLogin = (navigate) => {
     navigate("/")
   }
 
- export const goToComments = (navigate) => {
+ export const goToComments = (navigate, id) => {
 navigate(`/comments/${id}`)
  } 
 
- export const goToPosts = (navigate) => {
+ export const goToPosts = (navigate, id) => {
     navigate(`/posts/${id}`)
  } 
 

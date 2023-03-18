@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import continuar from "../../assets/img/continuar.png"
+
 
 
 export const ContainerLogin = styled.div`
@@ -25,6 +25,9 @@ input{
     
     @media (max-width: 590px){
         width: 500px;
+    }
+    @media (max-width: 490px){
+        width: 390px;
     }
     @media (max-width: 390px){
         width: 300px;

@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { CommentBoxCard, LikeDislikeBoxContainer } from "./CommenCard.styled";
-import { BASE_URL, TOKEN_NAME } from "../../Constants/url";
+import { BASE_URL } from "../../Constants/url";
 import LikeIcon from "../../assets/img/likeIco.png";
 // import  from "";
 // import  from "";
@@ -12,6 +12,7 @@ function CommentCard(props){
     const { comment, fetchComments} = props
 
     const [isLoading, setIsLoading] = useState(false);
+    const TOKEN_NAME = "token"
 
     const like = async () => {
         setIsLoading(true)

@@ -6,7 +6,7 @@ Este é o projeto final do curso de Desenvolvimento Web Full Stack da Labenu, qu
 Segue abaixo os links para o repositório do Back End e o Deploy:
 
 # link repositório Back-end #
-https://github.com/MaikelDiulio/Labeddit-Back-end/pull/1
+https://github.com/MaikelDiulio/Labeddit-back-end1
 
 
 # Link do Deploy #

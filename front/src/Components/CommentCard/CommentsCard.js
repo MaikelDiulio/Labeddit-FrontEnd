@@ -2,7 +2,8 @@
 import axios from "axios";
 import { useState } from "react";
 import { CommentBoxCard, LikeDislikeBoxContainer } from "./CommenCard.styled";
-import { BASE_URL, TOKEN_NAME } from "../../Constants/url";
+import { BASE_URL } from "../../Constants/url";
+import { TOKEN_NAME } from "../../Constants/tokeName";
 import LikeIcon from "../../assets/img/likeIco.png";
 // import  from "";
 // import  from "";

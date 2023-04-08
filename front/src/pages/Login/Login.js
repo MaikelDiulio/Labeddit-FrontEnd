@@ -6,11 +6,17 @@ import continuar from "../../assets/img/continuar.png"
 import criarConta from "../../assets/img/crieconta.png"
 import line from "../../assets/img/Line.png"
 // import { useLocation } from 'react-router-dom'
-import { BASE_URL } from "../../Constants/Url"
 import { goTOLogin, goToPosts, goToSignUp } from '../../Router/Cordinates';
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../../Constants/url';
 
-function Login() {
+
+
+
+
+const Login = () => {
+
+
   const [emailLogin, setEmailLogin] = useState("")
   const [senhaLogin, setSenha] = useState("")
   const [storage, setStorage] = useState("")
@@ -24,7 +30,7 @@ function Login() {
 
   const authentication = {
     "email": emailLogin,
-    "senha": senhaLogin
+    "password": senhaLogin
   }
 
 
@@ -55,7 +61,7 @@ function Login() {
         <input value={emailLogin} onChange={(e) => setEmailLogin(e.target.value)} type="email" id="email" name="email" placeholder="   E-mail" />
 
 
-        <input value={senhaLogin} onChange={(e) => setSenha(e.target.value)} type="password" id="password" name="password" placeholder="   Senha"  />
+        <input value={senhaLogin} onChange={(e) => setSenha(e.target.value)} type="password" id="password" name="password" placeholder="   Senha" />
 
 
       </Form>
@@ -74,5 +80,4 @@ function Login() {
     </ContainerLogin>
   )
 }
-
 export default Login

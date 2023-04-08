@@ -15,6 +15,13 @@ export const ContainerCadastro = styled.div`
         width: 100%;
         height: 300px;
         margin-bottom: 50px;
+
+        @media (max-width: 390px){
+            display: flex;
+        justify-content: center;
+        align-items: end;
+             
+         }
     
         h1{
             color: #373737;
@@ -23,6 +30,20 @@ export const ContainerCadastro = styled.div`
             font-weight: 700;
             font-size: 5.25rem;
             line-height: 100px;
+
+            @media (max-width: 590px){
+             width: 500px;
+         }
+         @media (max-width: 390px){
+            font-size: 2rem;
+            line-height: 60px;
+             
+         }
+         @media (max-width: 370px){
+             width: 200px;
+         }
+
+            
             
         }
     }

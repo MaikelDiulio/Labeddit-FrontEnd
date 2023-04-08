@@ -1,1 +1,3 @@
-const BASE_URL ="http://localhost:3003"
+export const BASE_URL ="https://labeddit-back-end1.onrender.com"
+
+export const TOKEN_NAME = "token"

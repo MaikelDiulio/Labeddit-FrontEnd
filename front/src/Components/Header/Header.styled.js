@@ -32,8 +32,13 @@ export const ContainerHeader = styled.div`
             color:#4088CB;
             font-weight: bold;
             text-decoration:none ;
+
         }
 
+    }
+
+    a{
+        cursor:pointer;
     }
 
 

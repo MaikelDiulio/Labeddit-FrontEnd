@@ -1,9 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Cadastro from '../pages/Cadastro/Cadastro'
+import Login from "../pages/Login/Login"
 import Post from '../pages/PostPage/Post'
-import Comment from '../pages/Comment/Comment'
-import Login from '../pages/Login/Login'
+import Cadastro from '../pages/Cadastro/Cadastro'
+import Comments from '../pages/Comment/Comments'
+
+
+
 
 
 function Router() {
@@ -13,8 +16,8 @@ function Router() {
     <Routes>
         <Route index element={<Login/>}/>
         <Route path='/signup' element={<Cadastro/>}/>
-        <Route path='/posts/:id' element={<Post/>}/>
-        <Route path='/comments/:id' element={<Comment/>}/>
+        <Route path='/posts' element={<Post/>}/>
+        <Route path= "/comments/:id" element={<Comments/>}/>
         
     </Routes>
     </BrowserRouter>

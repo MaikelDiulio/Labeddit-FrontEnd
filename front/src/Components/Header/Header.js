@@ -1,14 +1,21 @@
 import React from 'react'
 import { ContainerHeader } from './Header.styled'
 import logo2 from "../../assets/img/logo2.png"
-import { useLocation, useNavigate } from "react-router-dom"
+import { useLocation, useNavigate, useParams } from "react-router-dom"
 import { goTOLogin } from '../../Router/Cordinates'
+import { BASE_URL } from '../../Constants/url'
 
 
 
 function Header() {
   const navigate = useNavigate()
   const location = useLocation()
+  const params = useParams()
+
+  const deleteLogin = () =>{
+    localStorage.removeItem("token")
+    goTOLogin(navigate)
+  }
 
 
   const diferentHeader = () => {
@@ -23,14 +30,14 @@ function Header() {
             </div>
 
             <div className='link'>
-              <a href='' role="button">Entrar</a>
+              <a onClick={() => goTOLogin(navigate)} role="button">Entrar</a>
 
             </div>
 
           </>
 
         )
-      case "/posts/:id":
+      case "/posts":
         return (
           <>
 
@@ -40,24 +47,24 @@ function Header() {
             </div>
 
             <div className='link'>
-              <a  role="button">LogOut</a>
+              <a  role="button" onClick={() => deleteLogin()}>LogOut</a>
 
             </div>
 
           </>
         )
 
-      case "/comments/:id":
+      case `/comments/${params.id}`:
         return (
           <>
 
             <div className='img'>
-              <img src={logo2} alt="logo" />
+              <img src={logo2}  alt="logo" />
 
             </div>
 
             <div className='link'>
-              <a  role="button">LogOut</a>
+              <a  role="button" onClick={() => deleteLogin()}>LogOut</a>
 
             </div>
 
